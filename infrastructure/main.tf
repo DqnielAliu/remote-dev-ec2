@@ -1,6 +1,6 @@
 resource "aws_key_pair" "auth_key" {
   key_name   = "${var.project_name}-key"
-  public_key = file("~/.ssh/devKey.pub")
+  public_key = file(join(".", ["${var.key-file}", "pub"]))
 }
 
 /* Just a random example of using local variable

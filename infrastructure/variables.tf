@@ -21,7 +21,7 @@ variable "inventory-file" {
 variable "key-file" {
   type        = string
   description = "SSH private key file"
-  default     = "~/.ssh/mtcKey"
+  default     = "~/.ssh/devKey"
 }
 variable "host_os" {
   type        = string
